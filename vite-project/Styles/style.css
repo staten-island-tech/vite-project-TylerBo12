@@ -1,3 +1,4 @@
+@import url(Variables.css);
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -96,6 +97,4 @@ button:focus-visible {
   }
 }
 
-body{
-  background-color: lightblue;
-}
+
