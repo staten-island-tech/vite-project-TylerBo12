@@ -1,11 +1,13 @@
- const roster = [
+const roster = [
   {
     Row1: [
       {
         name: `Mario`,
+        series: `Super Mario Bros`,
       },
       {
         name: `Donkey Kong`,
+        series: `Super Mario Bros, Donkey Kong`,
       },
       {
         name: `Link`,
@@ -18,6 +20,7 @@
       },
       {
         name: `Yoshi`,
+        series: `Super Mario Bros`,
       },
       {
         name: `Kirby`,
@@ -30,6 +33,7 @@
       },
       {
         name: `Luigi`,
+        series: `Super Mario Bros`,
       },
       {
         name: `Ness`,
@@ -84,6 +88,6 @@
       },
     ],
   },
-]
+];
 
 console.log(roster);

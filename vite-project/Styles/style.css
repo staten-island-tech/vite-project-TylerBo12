@@ -7,10 +7,6 @@ html,body,*{
 title, .app{
   font-size: 10rem;
 }
-.animation{
-  background-color: aliceblue;
-font-size: 10rem;
-}
 #buttonContainer{
   display: flex;
   font-size: 10rem;
@@ -18,9 +14,29 @@ font-size: 10rem;
 }
 .buttons{
   display: flex;
-  font-size: 5rem;
+  font-size: var(--h2);
   width: 30rem;
   margin: 2rem;
-  align-content: center;
+  text-align: center;
   align-items: center;
+}
+
+.storeFront{
+  font-size: var(--h1);
+  background-color: var(--light );
+  text-align: center;
+
+}
+
+:root{
+  --light: #38abc3;
+
+
+  /* Typing and Font-Sizes */
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+  --h6: 1rem;
 }
