@@ -11,27 +11,40 @@ title, .app{
   display: flex;
   font-size: 10rem;
   align-content: center;
+  justify-content: center;
+  background-color: #4fcbe4;
 }
-.buttons{
+.btn1,.btn2,.btn3,.btn4,.btn5{
+  cursor: pointer;
   display: flex;
   font-size: var(--h2);
   width: 30rem;
   margin: 2rem;
   text-align: center;
   align-items: center;
+  align-content: center;
+  border-radius: 1rem;
+  background-color: var(--secondary);
+  border: solid darkblue 1rem;
+  transition: 0.5s;
+}
+.btn1 :hover{
+  border: solid purple 1rem;
 }
 
 .storeFront{
   font-size: var(--h1);
-  background-color: var(--light );
+  background-color: var(--light);
   text-align: center;
-
 }
 
+
 :root{
-  --light: #38abc3;
-
-
+  --light: #4fcbe4;
+  --dark: rgb(76, 107, 247);
+  /* Intentions */
+  --primary: var(--light);
+  --secondary: var(--dark); 
   /* Typing and Font-Sizes */
   --h1: 7.594rem;
   --h2: 5.063rem;
