@@ -14,11 +14,12 @@ const DOMselectors = {
 };
 
 DOMselectors.buttons.addEventListener(`click`, function () {
-  if (document.body.classList.contains("btn1")) {
-    document.body.classList.add("btn2");
-    document.body.classList.remove("btn1");
-  } else (document.body.classList.contains("btn2")){
-    document.body.classList.add("btn1");
-    document.body.classList.remove("btn2");
-  };
+  if (document.body.classList.contains("storeFront")) {
+    document.body.classList.add("light-Blue");
+    document.body.classList.remove("storeFront");
+  } else {
+    document.body.classList.contains("light-Blue");
+    document.body.classList.add("storeFront");
+    document.body.classList.remove("light-Blue");
+  }
 });
