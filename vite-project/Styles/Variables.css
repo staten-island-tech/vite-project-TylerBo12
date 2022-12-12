@@ -1,3 +1,20 @@
+:root{
+  --light: #4fcbe4;
+  --dark: rgb(76, 107, 247);
+  --monotone: #5f3be0;
+
+  /* Intentions */
+  --primary: var(--light);
+  --secondary: var(--dark); 
+  /* Typing and Font-Sizes */
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+  --h6: 1rem;
+}
+
 body{
-    background-color: lightblue;
+    background-color: #4fcbe4;
 }

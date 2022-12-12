@@ -90,4 +90,8 @@ const roster = [
   },
 ];
 
-console.log(roster);
+roster.forEach((row) => {
+  row.forEach((character) => {
+    console.log(character.name);
+  });
+});

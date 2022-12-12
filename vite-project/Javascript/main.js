@@ -14,12 +14,12 @@ const DOMselectors = {
 };
 
 DOMselectors.buttons.addEventListener(`click`, function () {
-  if (document.body.classList.contains("storeFront")) {
+  if (document.body.classList.contains("hotPink")) {
     document.body.classList.add("light-Blue");
-    document.body.classList.remove("storeFront");
+    document.body.classList.remove("hotPink");
   } else {
     document.body.classList.contains("light-Blue");
-    document.body.classList.add("storeFront");
+    document.body.classList.add("hotPink");
     document.body.classList.remove("light-Blue");
   }
 });
