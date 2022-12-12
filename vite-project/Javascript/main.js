@@ -1,13 +1,9 @@
 import "../Styles/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import { roster } from "../Javascript/menu.js";
 AOS.init();
 import "../Javascript/menu.js";
-/* import javascriptLogo from "../JavaScript/javascript.svg";
-import { setupCounter } from "../JavaScript/counter.js";
- 
-setupCounter(document.querySelector("#counter"));*/
 
 const DOMselectors = {
   buttons: document.querySelector(".btn1"),
@@ -23,3 +19,33 @@ DOMselectors.buttons.addEventListener(`click`, function () {
     document.body.classList.remove("light-Blue");
   }
 });
+
+/* roster.forEach((row) => {
+  row.forEach((character) => {
+    console.log(character.name);
+  });
+}); */
+
+// const myFunctions = {
+//   inject: function () {
+//     roster.Row1.filter((character) =>
+//       character.series.includes("Super Mario Bros").forEach((character) => {
+//         console.log(character.name);
+//       })
+//     );
+//   },
+// };
+
+// myFunctions.inject();
+
+const myFunctions = {
+  inject: function () {
+    roster.Row1.filter((character) =>
+      character.series.includes("Super Mario Bros").forEach((character) => {
+        console.log(character.name);
+      })
+    );
+  },
+};
+
+myFunctions.inject();
