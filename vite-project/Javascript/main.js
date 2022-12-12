@@ -39,13 +39,20 @@ DOMselectors.buttons.addEventListener(`click`, function () {
 // myFunctions.inject();
 
 const myFunctions = {
-  inject: function () {
+  filtered: function () {
     roster.Row1.filter((character) =>
-      character.series.includes("Super Mario Bros").forEach((character) => {
-        console.log(character.name);
-      })
-    );
+      character.series.includes("Super Mario Bros")
+    ).forEach((character) => {
+      console.log(character.name);
+    });
+  },
+  makeCards: function () {
+    roster.Row1.forEach((character) => {
+      console.log(character.name);
+    });
   },
 };
 
-myFunctions.inject();
+myFunctions.makeCards();
+
+/* roster.Row1.forEach((e) => console.log(e.series.includes("Super Mario Bros"))); */

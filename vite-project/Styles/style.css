@@ -40,7 +40,24 @@ title, .app{
   text-align: center;
 }
 .hotPink{
-  background-color: var(--secondary);
+  background-color: var(--Pinky);
+}
+#parentContainer{
+  display: flex;
+  background-color: white;
+  width: 30rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.child{
+  display: flex;
+  background-color: darkslateblue;
+  margin: 1.4rem;
+  border: solid black 1rem;
+  align-content: center;
+  justify-content: center;
+
 }
 
 

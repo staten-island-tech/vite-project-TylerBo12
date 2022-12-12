@@ -2,10 +2,12 @@
   --light: #4fcbe4;
   --dark: rgb(76, 107, 247);
   --monotone: #5f3be0;
+  --Pinky: #ff00d0;
 
   /* Intentions */
   --primary: var(--light);
-  --secondary: var(--dark); 
+  --secondary: var(--dark);
+   
   /* Typing and Font-Sizes */
   --h1: 7.594rem;
   --h2: 5.063rem;
