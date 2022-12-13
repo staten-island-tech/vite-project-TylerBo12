@@ -27,9 +27,6 @@ title, .app{
   border: solid darkblue 1rem;
   transition: 0.5s;
 }
-.btn1 :hover{
-  border: solid purple 1rem;
-}
 
 .light-Blue{
   background-color: var(--light);
@@ -44,14 +41,16 @@ title, .app{
 }
 #parentContainer{
   display: flex;
-  background-color: white;
-  width: 30rem;
+  width: 100vw ;
   text-align: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .child{
   display: flex;
+  font-size: 10rem;
+  width: 30rem;
   background-color: darkslateblue;
   margin: 1.4rem;
   border: solid black 1rem;

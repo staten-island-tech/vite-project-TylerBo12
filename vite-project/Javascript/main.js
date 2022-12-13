@@ -7,6 +7,7 @@ import "../Javascript/menu.js";
 
 const DOMselectors = {
   buttons: document.querySelector(".btn1"),
+  parent: document.querySelector("#parentContainer"),
 };
 
 DOMselectors.buttons.addEventListener(`click`, function () {
@@ -19,6 +20,22 @@ DOMselectors.buttons.addEventListener(`click`, function () {
     document.body.classList.remove("light-Blue");
   }
 });
+
+const myFunctions = {
+  filtered: function () {
+    roster.Row1.filter((character) =>
+      character.series.includes("Super Mario Bros")
+    ).forEach((character) => {
+      console.log(character.name);
+    });
+  },
+  makeCards: function () {
+    DOMselectors.parent.insertAdjacentHTML("beforeend");
+  },
+};
+
+myFunctions.filtered();
+myFunctions.makeCards();
 
 /* roster.forEach((row) => {
   row.forEach((character) => {
@@ -37,22 +54,5 @@ DOMselectors.buttons.addEventListener(`click`, function () {
 // };
 
 // myFunctions.inject();
-
-const myFunctions = {
-  filtered: function () {
-    roster.Row1.filter((character) =>
-      character.series.includes("Super Mario Bros")
-    ).forEach((character) => {
-      console.log(character.name);
-    });
-  },
-  makeCards: function () {
-    roster.Row1.forEach((character) => {
-      console.log(character.name);
-    });
-  },
-};
-
-myFunctions.makeCards();
 
 /* roster.Row1.forEach((e) => console.log(e.series.includes("Super Mario Bros"))); */
