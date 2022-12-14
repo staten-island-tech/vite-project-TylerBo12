@@ -36,7 +36,7 @@ const myFunctions = {
     roster.Row1.forEach((character) => {
       DOMselectors.parent.insertAdjacentHTML(
         "beforeend",
-        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p><p>${character.price}</p></div> `
+        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p><p>$${character.price}</p></div> `
       );
     });
   },
@@ -44,30 +44,22 @@ const myFunctions = {
     roster.Row1.filter((character) =>
       character.properties.includes(`Floaty`)
     ).forEach((character) => {
-      console.log(character.name);
-      alert("this is an alert");
+      DOMselectors.parent.insertAdjacentHTML(
+        "beforeend",
+        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p> <p>${character.price}</p></div>`
+      );
+    });
+  }),
+  filterAll: DOMselectors.allBtn.addEventListener("click", function () {
+    roster.Row1.filter((character) =>
+      character.properties.includes(`Floaty`)
+    ).forEach((character) => {
+      DOMselectors.parent.insertAdjacentHTML(
+        "beforeend",
+        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p> <p> ${character.price}</p></div>`
+      );
     });
   }),
 };
 
 myFunctions.makeCards();
-
-/* roster.forEach((row) => {
-  row.forEach((character) => {
-    console.log(character.name);
-  });
-}); */
-
-// const myFunctions = {
-//   inject: function () {
-//     roster.Row1.filter((character) =>
-//       character.series.includes("Super Mario Bros").forEach((character) => {
-//         console.log(character.name);
-//       })
-//     );
-//   },
-// };
-
-// myFunctions.inject();
-
-/* roster.Row1.forEach((e) => console.log(e.series.includes("Super Mario Bros"))); */
