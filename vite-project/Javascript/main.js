@@ -6,11 +6,14 @@ AOS.init();
 import "../Javascript/menu.js";
 
 const DOMselectors = {
-  buttons: document.querySelector(".btn1"),
+  colorChange: document.querySelector(".btn1"),
+  allBtn: document.querySelector(".btn2"),
+  floatyBtn: document.querySelector(".btn3"),
   parent: document.querySelector("#parentContainer"),
+  child: document.querySelector(".child"),
 };
 
-DOMselectors.buttons.addEventListener(`click`, function () {
+DOMselectors.colorChange.addEventListener(`click`, function () {
   if (document.body.classList.contains("hotPink")) {
     document.body.classList.add("light-Blue");
     document.body.classList.remove("hotPink");
@@ -30,11 +33,23 @@ const myFunctions = {
     });
   },
   makeCards: function () {
-    DOMselectors.parent.insertAdjacentHTML("beforeend");
+    roster.Row1.forEach((character) => {
+      DOMselectors.parent.insertAdjacentHTML(
+        "beforeend",
+        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p><p>${character.price}</p></div> `
+      );
+    });
   },
+  filterFloaties: DOMselectors.floatyBtn.addEventListener("click", function () {
+    roster.Row1.filter((character) =>
+      character.properties.includes(`Floaty`)
+    ).forEach((character) => {
+      console.log(character.name);
+      alert("this is an alert");
+    });
+  }),
 };
 
-myFunctions.filtered();
 myFunctions.makeCards();
 
 /* roster.forEach((row) => {
