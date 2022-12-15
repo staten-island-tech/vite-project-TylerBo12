@@ -2,11 +2,16 @@
   --light: #4fcbe4;
   --dark: rgb(76, 107, 247);
   --monotone: #5f3be0;
-  --Pinky: #ff00d0;
+  --alternate: #c30010;
+  --darkBlue: #000071;
+  --black: #000;
 
   /* Intentions */
   --primary: var(--light);
   --secondary: var(--dark);
+  --cardColor: var(--darkBlue);
+  --defaultBacco: var(--light);
+  --alternateBacco: var(--darkBlue);
    
   /* Typing and Font-Sizes */
   --h1: 7.594rem;
