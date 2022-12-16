@@ -1,9 +1,9 @@
 import "../Styles/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import { roster } from "../Javascript/menu.js";
+import { roster } from "./array.js";
 AOS.init();
-import "../Javascript/menu.js";
+import "./array.js";
 
 const DOMselectors = {
   colorChange: document.querySelector(".btn1"),
@@ -54,6 +54,7 @@ const myFunctions = {
     roster.Row1.filter((character) =>
       character.properties.includes(`All`)
     ).forEach((character) => {
+      character.remove();
       DOMselectors.parent.insertAdjacentHTML(
         "beforeend",
         `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p> <p> $${character.price}</p></div>`
