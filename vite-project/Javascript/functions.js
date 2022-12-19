@@ -1,5 +1,6 @@
 import { DOMselectors } from "./main";
 import { roster } from "./array";
+
 const myFunctions = {
   filtered: function () {
     roster.Row1.filter((character) =>
@@ -58,12 +59,10 @@ const myFunctions = {
         `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p> <p> $${character.price}</p></div>`
       );
     });
-  }),
-  removeCards: DOMselectors.allBtn.addEventListener("click", function () {
-    roster.Row1.filter((character) =>
-      character.properties.includes(`All`)
-    ).forEach((character) => {
-      character.remove();
+    const cards = document.querySelectorAll(".child");
+    const cardsArray = Array.from(cards);
+    cardsArray.forEach((cards) => {
+      cards.remove();
     });
   }),
 };
