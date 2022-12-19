@@ -1,7 +1,7 @@
 import "../Styles/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import { roster } from "./array.js";
+import "./functions.js";
 AOS.init();
 import "./array.js";
 
@@ -9,6 +9,8 @@ const DOMselectors = {
   colorChange: document.querySelector(".btn1"),
   allBtn: document.querySelector(".btn2"),
   floatyBtn: document.querySelector(".btn3"),
+  projectileBtn: document.querySelector(".btn4"),
+  smbBtn: document.querySelector(".btn5"),
   parent: document.querySelector("#parentContainer"),
   child: document.querySelector(".child"),
 };
@@ -24,43 +26,4 @@ DOMselectors.colorChange.addEventListener(`click`, function () {
   }
 });
 
-const myFunctions = {
-  filtered: function () {
-    roster.Row1.filter((character) =>
-      character.series.includes("Super Mario Bros")
-    ).forEach((character) => {
-      console.log(character.name);
-    });
-  },
-  makeCards: function () {
-    roster.Row1.forEach((character) => {
-      DOMselectors.parent.insertAdjacentHTML(
-        "beforeend",
-        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p><p>$${character.price}</p></div> `
-      );
-    });
-  },
-  filterFloaties: DOMselectors.floatyBtn.addEventListener("click", function () {
-    roster.Row1.filter((character) =>
-      character.properties.includes(`Floaty`)
-    ).forEach((character) => {
-      DOMselectors.parent.insertAdjacentHTML(
-        "beforeend",
-        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p> <p>$${character.price}</p></div>`
-      );
-    });
-  }),
-  filterAll: DOMselectors.allBtn.addEventListener("click", function () {
-    roster.Row1.filter((character) =>
-      character.properties.includes(`All`)
-    ).forEach((character) => {
-      character.remove();
-      DOMselectors.parent.insertAdjacentHTML(
-        "beforeend",
-        `<div class="child"><p>${character.name}</p> <p ><img class="imgs"src= ${character.img}></p> <p> $${character.price}</p></div>`
-      );
-    });
-  }),
-};
-
-myFunctions.makeCards();
+export { DOMselectors };

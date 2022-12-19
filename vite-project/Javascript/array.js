@@ -39,7 +39,7 @@ const roster = {
       name: `Yoshi`,
       series: ["Super Mario Bros", "Yoshi's Island"],
       img: `https://ssb.wiki.gallery/images/thumb/8/8d/Yoshi_SSBU.png/1200px-Yoshi_SSBU.png`,
-      price: 0,
+      price: 1000000,
       properties: [`Floaty`, `Projectiles`, `All`],
     },
     {
@@ -67,7 +67,7 @@ const roster = {
       name: `Luigi`,
       series: ["Super Mario Bros"],
       img: `https://ssb.wiki.gallery/images/thumb/b/bb/Luigi_SSBU.png/1200px-Luigi_SSBU.png`,
-      price: 1.0,
+      price: 25.0,
       properties: [`Combo Starter`, `All`],
     },
     {
