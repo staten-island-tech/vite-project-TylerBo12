@@ -31,14 +31,14 @@ title, .app{
 .defaultTheme{
   background-color: var(--defaultBacco);
 }
-
+.alternateTheme{
+  background-color: var(--alternateBacco);
+}
 .storeFront{
   font-size: var(--h1);
   text-align: center;
 }
-.alternateTheme{
-  background-color: var(--alternateBacco);
-}
+
 #parentContainer{
   display: flex;
   width: 100vw ;

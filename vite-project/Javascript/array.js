@@ -54,7 +54,7 @@ const roster = {
       series: [`Starfox`],
       img: `https://ssb.wiki.gallery/images/thumb/2/2f/Fox_SSBU.png/1200px-Fox_SSBU.png`,
       price: 20.0,
-      properties: [`Light`, `Projectiles`, `All`],
+      properties: [`Floaty`, `Projectiles`, `All`],
     },
     {
       name: `Pikachu`,
