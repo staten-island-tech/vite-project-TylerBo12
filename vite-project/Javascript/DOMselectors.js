@@ -1,10 +1,3 @@
-import "../Styles/style.css";
-import "../Styles/Variables.css";
-import "./functions.js";
-import "./array.js";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles=
-AOS.init();
 export { DOMselectors };
 
 const DOMselectors = {

@@ -1,5 +1,12 @@
-import { DOMselectors } from "./main.js";
+import { DOMselectors } from "./DOMselectors.js";
 import { roster } from "./array.js";
+import "./DOMselectors.js";
+import "../Styles/style.css";
+import "../Styles/Variables.css";
+import "./array.js";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles=
+AOS.init();
 
 const createFilters = {
   Floaties: function () {
@@ -59,7 +66,7 @@ const myFunctions = {
     "click",
     function () {
       myFunctions.removeCards();
-      createFilters.Projectiles();
+      createFilters.Smb();
     }
   ),
   filterFloaties: DOMselectors.floatyBtn.addEventListener("click", function () {
