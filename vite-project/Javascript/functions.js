@@ -1,5 +1,5 @@
-import { DOMselectors } from "./main";
-import { roster } from "./array";
+import { DOMselectors } from "./main.js";
+import { roster } from "./array.js";
 
 const createFilters = {
   Floaties: function () {
