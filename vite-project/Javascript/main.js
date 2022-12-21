@@ -1,9 +1,11 @@
 import "./functions.js";
 import "../Styles/style.css";
+import "../Styles/variables.css";
 import AOS from "aos";
+import "./array.js";
 import "aos/dist/aos.css"; // You can also use <link> for styles=
 AOS.init();
-import "./array.js";
+export { DOMselectors };
 
 const DOMselectors = {
   colorChange: document.querySelector(".btn1"),
@@ -14,16 +16,3 @@ const DOMselectors = {
   parent: document.querySelector("#parentContainer"),
   child: document.querySelector(".child"),
 };
-
-DOMselectors.colorChange.addEventListener(`click`, function () {
-  if (document.body.classList.contains("defaultTheme")) {
-    document.body.classList.add("alternateTheme");
-    document.body.classList.remove("defaultTheme");
-  } else document.body.classList.contains("alternateTheme");
-  {
-    document.body.classList.add("defaultTheme");
-    document.body.classList.remove("alternateTheme");
-  }
-});
-
-export { DOMselectors };

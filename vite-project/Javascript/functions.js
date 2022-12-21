@@ -52,40 +52,33 @@ const myFunctions = {
     });
   },
   filterSMB: DOMselectors.smbBtn.addEventListener("click", function () {
-    roster.Row1.filter((character) =>
-      character.series.includes(`Super Mario Bros`)
-    ).forEach((character) => {
-      myFunctions.removeCards();
-      createFilters.Smb();
-    });
+    myFunctions.removeCards();
+    createFilters.Smb();
   }),
   filterProjectiles: DOMselectors.projectileBtn.addEventListener(
     "click",
     function () {
-      roster.Row1.filter((character) =>
-        character.properties.includes(`Projectiles`)
-      ).forEach((character) => {
-        myFunctions.removeCards();
-        createFilters.Projectiles();
-      });
+      myFunctions.removeCards();
+      createFilters.Projectiles();
     }
   ),
   filterFloaties: DOMselectors.floatyBtn.addEventListener("click", function () {
-    roster.Row1.filter((character) =>
-      character.properties.includes(`Floaty`)
-    ).forEach((character) => {
-      myFunctions.removeCards();
-      createFilters.Floaties();
-    });
+    myFunctions.removeCards();
+    createFilters.Floaties();
   }),
 
   filterAll: DOMselectors.allBtn.addEventListener("click", function () {
-    roster.Row1.filter((character) =>
-      character.properties.includes(`All`)
-    ).forEach((character) => {
-      myFunctions.removeCards();
-      myFunctions.makeCards();
-    });
+    myFunctions.removeCards();
+    myFunctions.makeCards();
+  }),
+  BaccoChange: DOMselectors.colorChange.addEventListener("click", function () {
+    if (document.body.classList.contains("defaultTheme")) {
+      document.body.classList.add("alternateTheme");
+      document.body.classList.remove("defaultTheme");
+    } else {
+      document.body.classList.add("defaultTheme");
+      document.body.classList.remove("alternateTheme");
+    }
   }),
 };
 

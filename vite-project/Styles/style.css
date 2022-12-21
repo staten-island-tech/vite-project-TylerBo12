@@ -1,4 +1,5 @@
 @import url(Variables.css);
+
 html,body,*{
   font-size: 62.5%;
   box-sizing: border-box;
@@ -27,12 +28,12 @@ title, .app{
   border: solid darkblue 1rem;
   transition: 0.5s;
 }
-
 .defaultTheme{
-  background-color: var(--defaultBacco);
+  background-color: lightblue;
 }
+
 .alternateTheme{
-  background-color: var(--alternateBacco);
+  background-color: lightgreen;
 }
 .storeFront{
   font-size: var(--h1);

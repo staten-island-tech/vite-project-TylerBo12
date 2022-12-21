@@ -1,17 +1,19 @@
 :root{
-  --light: #4fcbe4;
+  --lightBlue: #4fcbe4;
   --dark: rgb(76, 107, 247);
-  --monotone: #5f3be0;
+  --lightGreen: #90ee90
   --alternate: #c30010;
-  --darkBlue: #000071;
+  --purple: #A020F0
   --black: #000;
 
   /* Intentions */
   --primary: var(--light);
   --secondary: var(--dark);
-  --cardColor: var(--darkBlue);
   --defaultBacco: var(--light);
-  --alternateBacco: var(--darkBlue);
+  --alternateBacco: var(--lightBlue);
+  --cardColor: var(--lightGreen);
+  
+  
    
   /* Typing and Font-Sizes */
   --h1: 7.594rem;
@@ -21,4 +23,7 @@
   --h5: 1.5rem;
   --h6: 1rem;
 }
+
+
+
 
