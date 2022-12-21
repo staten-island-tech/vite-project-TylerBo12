@@ -1,8 +1,8 @@
-import "./functions.js";
 import "../Styles/style.css";
 import "../Styles/Variables.css";
-import AOS from "aos";
+import "./functions.js";
 import "./array.js";
+import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles=
 AOS.init();
 export { DOMselectors };
