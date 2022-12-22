@@ -66,7 +66,7 @@ const myFunctions = {
     "click",
     function () {
       myFunctions.removeCards();
-      createFilters.Smb();
+      createFilters.Projectiles();
     }
   ),
   filterFloaties: DOMselectors.floatyBtn.addEventListener("click", function () {
